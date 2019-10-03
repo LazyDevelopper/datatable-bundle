@@ -1,0 +1,4 @@
+services:
+   datatable_factory:
+           class: DataTableBundle\DataTable\DataTableFactory
+           arguments: ['@doctrine.orm.entity_manager', '@router']

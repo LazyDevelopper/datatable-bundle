@@ -1,0 +1,24 @@
+{
+    "name": "marwen/datatable-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony DataTable bundle generator",
+    "keywords": ["DataTable", "symfony", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdelmaksoud Marwane",
+            "email": "abdelmaksoud.marwane@gmail.com",
+            "homepage": "https://github.com/a-marwen"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+       "doctrine/doctrine-bundle": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DataTableBundle\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}

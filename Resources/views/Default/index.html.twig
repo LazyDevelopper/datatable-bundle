@@ -1,0 +1,48 @@
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css" />
+{% endblock %}
+{% block body %}
+<table id="data-list">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>prenom</th>
+            <th>action</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(function() {
+             // Setup - add a text input to each footer cell
+    $('#data-list thead tr').clone(true).appendTo( '#data-list thead' );
+    $('#data-list thead tr:eq(1) th').each( function (i) {
+        let title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+
+        $( 'input', this ).on( 'keyup change', function () {
+            if ( table.column(i).search() !== this.value ) {
+                table
+                    .column(i)
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+           let table =  $('#data-list').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "{{ path('list_ajax') }}",
+                "sAjaxDataProp": "data",
+                "pageLength": 10,
+            });
+        });
+    </script>
+{% endblock %}
