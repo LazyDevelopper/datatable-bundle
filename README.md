@@ -2,8 +2,7 @@
 symfony bundle to generate dataTable
 
 [![PHP](https://img.shields.io/badge/PHP-7.0%2B-blue.svg)](https://secure.php.net/migration70)
-[![Latest Stable Version](https://poser.pugx.org/webinarium/datatables-bundle/v/stable)](https://packagist.org/packages/marwen/datatable-bundle)
-[![Build Status](https://travis-ci.org/webinarium/DataTablesBundle.svg?branch=master)](https://travis-ci.org/webinarium/DataTablesBundle)
+[![Latest Stable Version](https://poser.pugx.org/marwen/datatable-bundle/v/stable)](https://packagist.org/packages/marwen/datatable-bundle)
 
 # DataTables Symfony bundle
 
