@@ -6,7 +6,7 @@
  * Time: 12:37 PM
  */
 
-namespace Marwen\DataTableBundle\DataTable;
+namespace DataTableBundle\DataTable;
 
 
 abstract class AbstractDataTable

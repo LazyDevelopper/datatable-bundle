@@ -1,6 +1,6 @@
 <?php
 
-namespace Marwen\DataTableBundle\DependencyInjection;
+namespace DataTableBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

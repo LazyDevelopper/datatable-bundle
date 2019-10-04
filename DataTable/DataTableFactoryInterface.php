@@ -3,7 +3,7 @@
  * User: Abdelmaksoud Marwane
  */
 
-namespace Marwen\DataTableBundle\DataTable;
+namespace DataTableBundle\DataTable;
 
 interface DataTableFactoryInterface
 {
