@@ -1,6 +1,6 @@
 <?php
 
-namespace DataTableBundle\DependencyInjection;
+namespace Marwen\DataTableBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

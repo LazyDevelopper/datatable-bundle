@@ -3,7 +3,7 @@
  * User: Abdelmaksoud Marwane
  */
 
-namespace DataTableBundle\DataTable;
+namespace Marwen\DataTableBundle\DataTable;
 
 
 class DataTableBuilder implements DataTableBuilderInterface

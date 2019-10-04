@@ -1,6 +1,6 @@
 <?php
 
-namespace DataTableBundle;
+namespace Marwen\DataTableBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

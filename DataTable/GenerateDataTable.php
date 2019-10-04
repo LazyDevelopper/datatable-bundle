@@ -3,7 +3,7 @@
  * User: Abdelmaksoud Marwane
  */
 
-namespace DataTableBundle\DataTable;
+namespace Marwen\DataTableBundle\DataTable;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query;
