@@ -35,7 +35,7 @@ public function registerBundles()
 {
     $bundles = [
         // ...
-        new Marwen\DataTableBundle\MarwenDataTableBundle(),
+        new DataTableBundle\MarwenDataTableBundle(),
     ];
 }
 ```
