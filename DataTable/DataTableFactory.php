@@ -30,6 +30,9 @@ class DataTableFactory implements DataTableFactoryInterface
     public function create(string $dataTableType, array $request, array $options = null)
     {
         $dataTable            = new $dataTableType;
+        if (!$dataTable instanceof AbstractDataTable){
+            throw new \Exception($dataTableType.' must extend AbstractDataTable');
+        }
         $dataTableTypeBuilder = $dataTable->buildDataTable(new DataTableBuilder());
         $columns              = $dataTableTypeBuilder->getChilds();
         $customQuery          = null;
