@@ -1,0 +1,17 @@
+<script>
+    function datatable(params)
+    {
+        if (params.pageLength == null) {
+        params.pageLength = 10;
+    }
+        let table =  params.table.DataTable({
+        "processing": true,
+        "serverSide": true,
+        "ajax": {
+        "url": params.ajax,
+        "type": "GET",
+    },
+        "pageLength": params.pageLength,
+    });
+    }
+</script>
